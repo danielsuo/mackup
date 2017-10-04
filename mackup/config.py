@@ -221,8 +221,6 @@ class Config(object):
         # Python 2 and python 3 byte strings are different.
         if sys.version_info[0] < 3:
             path = str(path)
-        else:
-            path = path.decode("utf-8")
 
         return path
 
